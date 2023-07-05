@@ -1,0 +1,107 @@
+/*  HEADER */
+
+.home-header{
+    background-color: #EAC926;;
+}
+
+.home-image-logo{
+    width: 150px;
+    
+}
+
+.image-logo{
+
+    margin: 30px 0 10px 30px;
+}
+
+.home-icon-haeder{
+    margin: 5px 0 20px 20px;
+    
+}
+
+.icon-header i{
+    background-color: #ebebeb;;
+   border: solid 1px #666;
+   border-radius: 2px; 
+   margin-top: 3px; 
+   padding: 2px 2px;
+   
+}
+
+
+
+.home-header-cuotas p{
+    font-size: 13px;
+    font-style:italic;
+}
+.home-header-cuotas{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.home-nav{
+    margin: 15px 0;
+}
+
+.home-nav a{
+    
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 4px;
+}
+
+.home-nav-date{
+    display: flex;
+    align-items: center;
+}
+
+.header-bottom-menu{
+    margin: 20px 0 ;
+    text-align: center;
+}
+
+.bottom{
+    border-radius: 3px;
+    background-color: #1259c3;;
+    padding: 5px 5px;
+}
+
+/*  MAIN */
+
+.home-main{
+    display: none;
+}
+
+
+/*  FOOTER */
+.footer-img{
+    display: none;
+}
+
+.footer-date {
+     
+    text-align: center;
+    font-size: 13px;
+    padding: 10px 10px;
+}
+
+.footer-info{
+    color: #666;
+    margin-bottom: 20px;
+    
+}
+.footer-title{
+    color: #666;
+    text-align: center;
+    
+  
+}
+
+.footer-icon i{
+    color: #1259c3;
+    font-size: 23px;
+}
+
+
+
