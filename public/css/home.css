@@ -1,88 +1,55 @@
-/*  HEADER */
-
 .home-header {
     background-color: #EAC926;
-    ;
+
 }
 
 .home-image-logo {
-    width: 150px;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.image-logo {
-
-    margin: 30px 0 10px 30px;
-}
-
-.home-icon-header {
-    margin: 5px 0 20px 20px;
-
-}
-
-.icon-header i {
-    background-color: #ebebeb;
-    border: solid 1px #666;
-    border-radius: 2px;
-    margin-top: 3px;
-    padding: 2px 2px;
-
-}
-
-
-
-.home-header-cuotas p {
-    font-size: 13px;
-    font-style: italic;
+.home-image-logo img {
+    width: 47vw;
 }
 
 .home-header-cuotas {
     display: flex;
-    justify-content: center;
-
-}
-
-.home-nav {
+justify-content: center;
     margin: 15px 0;
 }
 
-.home-nav a {
-
-    font-size: 13px;
-    font-weight: bold;
-    margin-right: 4px;
-}
-
-.home-nav-date {
-    display: flex;
-    align-items: center;
+.home-nav{
+    display: none;
 }
 
 .header-bottom-menu {
-    margin-top: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+
 }
 
-.bottom {
-    border-radius: 3px;
+.header-bottom-menu a {
     background-color: #1259c3;
-    ;
-    padding: 5px 5px;
+    color: #fff;
+    border-radius: 4px;
+    padding: 7px;
 }
 
+
+/*  MAIN */
 .banner-img {
     width: 100vw;
     height: auto;
 }
 
-
-/*  MAIN */
-
-.home-main-card{
+.home-main-card {
     display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .card {
     max-width: 95%;
     background-color: #ebebeb;
@@ -126,13 +93,12 @@
     border-radius: 50%;
     border: 1px solid #39b54a;
     color: #39b54a;
+   
+   
 
 }
 
-.card-icon-circle i {
-    margin-top: 6px;
-    margin-left: 3px;
-}
+
 
 .card-descuento {
     color: #39b54a;
@@ -143,31 +109,6 @@
     line-height: 2;
 }
 
-/*/////TABLET ---desktop//////*/
-@media(min-width:481px) {
-
-    .home-main-card {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 10px;
-        justify-content: center;
-    }
-
-    .card {
-        flex: 1 0 200px;
-        background-color: #ebebeb;
-        box-shadow: rgba(0, 0, 0, 0.075);
-        margin-bottom: 10px;
-        
-    }
-
-    .card-container {
-        max-width: 95%;
-        background-color: white;
-        margin-bottom: 10px;
-        height: 100%;
-    }
-}
 
 
 
@@ -198,4 +139,114 @@
 .footer-icon i {
     color: #1259c3;
     font-size: 23px;
+}
+
+/*/////TABLET ---desktop//////*/
+@media(min-width:478px) {
+  
+
+    .home-image-logo img {
+        width: 30vw;
+        justify-content: centers;
+        padding: 20px 0;
+    }
+
+    .home-image-logo {
+        display: flex;
+        flex-direction: row;
+        
+        
+
+    }
+
+    .form-input {
+
+        width: 30vw;
+        border-radius: 4px;
+        margin: 0 15px;
+    }
+
+
+    .home-header-cuotas {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .home-header-cuotas h5 {
+        display: inline-block;
+    }
+
+    .header-bottom-menu {
+        display: none;
+    }
+
+    .card {
+        flex: 1 0 200px;
+        background-color: #ebebeb;
+        box-shadow: rgba(0, 0, 0, 0.075);
+        margin-bottom: 10px;
+
+    }
+    .home-nav{
+       display: flex;
+       flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 0;
+    }
+    .home-nav-a{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .home-nav-a li{
+       margin: 0 5px; 
+       font-size: 12px;
+    }
+    .home-nav-b{
+        display: flex;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .home-nav-b i{
+        margin-right: 5px;
+        
+    }
+    .home-nav-date{
+        display: flex;
+       
+        
+    }
+
+}
+
+@media(min-width:900px){
+    .home-nav{
+        display: flex;
+        flex-direction: row;
+         justify-content: space-between;
+         padding: 30px 0;
+     }
+     .home-nav-a{
+         display: flex;
+         justify-content: center;
+         
+     }
+     .home-nav-a li{
+        margin: 0 20px; 
+         
+     }
+     .home-nav-b{
+         display: flex;
+         justify-content: center;
+     }
+     .home-nav-b i{
+         margin-right: 20px;
+         
+     }
+     .home-nav-date{
+         display: flex;
+        
+         
+     }
 }
