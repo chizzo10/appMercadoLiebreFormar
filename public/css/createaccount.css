@@ -1,0 +1,53 @@
+.form-registro{
+    background-color: #ebebeb;
+    padding-bottom: 30px;
+    
+}
+
+
+.picture-user{
+    text-align: center;
+}
+.titulos-user{
+    margin: 1rem;
+}
+.date-user{
+   justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.input-form{
+    border-radius: 10px;
+    width: 350px;
+    height: 30px;
+    font-size: 0.7rem;
+    margin: 10px 3px;
+    padding-left: 3px;
+}
+.perfil-user{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.checkbox-user{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.password-user{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.btn-submit-reset{
+    text-align: center;
+}
+.btn-user{
+    background-color: #1259c3;
+    border-radius: 10px;
+    width: 10%;
+    font-size: 1rem;
+    padding: 5px 0;
+    margin-right: 10px;
+}

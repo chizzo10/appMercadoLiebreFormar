@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/e4646141a1.js" crossorigin="anonymous"></script>
+    <title>Create Account</title>
+</head>
+
+<body>
+    <header class="home-header">
+        <div class="home-image-logo">
+
+            <img class="image-logo" src="/images/logo-mercado-liebre.svg" alt="logo Mercado Liebre">
+            <div class="from-search">
+                <input class="form-input" type="text" placeholder="Buscar productos">
+
+                </form>
+            </div>
+
+            <div class="home-header-cuotas">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <h6>Comprá en cuotas y sin tarjeta de crédito</h6>
+
+            </div>
+        </div>
+        <nav>
+
+
+            <div class="home-nav">
+
+                <ul class="home-nav-a">
+                    <li><a href="">Ofertas</a></li>
+                    <li><a href="">Tiendas Oficiales</a></li>
+                    <li><a href="">Vender</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+                <ul class="home-nav-b">
+
+                    <div class="home-nav-date">
+                        <li><a href="/createAccount">Crear cuenta</a></li>
+                        <i class="fa-solid fa-id-card"></i>
+
+                    </div>
+
+                    <div class="home-nav-date">
+
+                        <li><a href="/login">Ingresá</a></li>
+                        <i class="fa-solid fa-right-to-bracket"></i>
+                    </div>
+
+                    <div class="home-nav-date">
+
+                        <li><a href="">Mis compras</a></li>
+                        <i class="fa-sharp fa-solid fa-basket-shopping"></i>
+                    </div>
+                </ul>
+            </div>
+
+            <div class="header-bottom-menu">
+                <a class="bottom"><i class="fas fa-bars fa-lg"></i></a>
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <main>
+
+        <div class="form-registro">
+            <form method="POST" action="createAccount">
+
+                <h4 class="titulos-user">Foto de Perfil</h4>
+                <div class="picture-user">
+                    <label for="foto_usuario"></label>
+                    <input type="file" id="foto_usuario" name="foto_usuario" accept="image/*">
+
+                </div>
+
+                <div class="date-user">
+                    <label for="nombre_apellido"></label>
+                    <input class="input-form" id="nombre_apellido" name="nombre_apellido"
+                        placeholder="Nombre y Apellido:" required>
+
+
+
+                    <label for="nombre_usuario"></label>
+                    <input class="input-form" type="text" id="nombre_usuario" name="nombre_usuario"
+                        placeholder="Nombre de usuari@:" required>
+
+
+                    <label for="email"></label>
+                    <input class="input-form" type="email" id="email" name="email" placeholder="Email:">
+
+
+                    <label for="fecha_nacimiento"></label>
+                    <input class="input-form" type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+                    <br>
+
+
+                    <label for="domicilio"></label>
+                    <input class="input-form" type="text" id="domicilio" name="domicilio" placeholder="Domicilio:">
+
+                </div>
+
+
+                <h4 class="titulos-user">Perfil de usuario </h4>
+                
+                <div class="perfil-user">
+                    <select class="input-form" id="rol" name="rol">
+                        <option disabled selected>Selecciona tu rol</option>
+                        <option value="comprador">Comprador</option>
+                        <option value="vendedor">Vendedor</option>
+                    </select>
+
+                </div>
+
+                <div>
+                    <h4 class="titulos-user">Categorías de interés</h4>
+
+                    <div class="checkbox-user">
+                        <input type="checkbox" id="electro" name="categorias_interes" value="electro">
+                        <label for="electro">Electro</label>
+
+                        <input type="checkbox" id="moda" name="categorias_interes" value="moda">
+                        <label for="moda">Moda</label>
+
+                        <input type="checkbox" id="hogar" name="categorias_interes" value="hogar">
+                        <label for="hogar">Hogar</label>
+
+                        <input type="checkbox" id="jugueteria" name="categorias_interes" value="jugueteria">
+                        <label for="jugueteria">Juguetería</label>
+
+                        <input type="checkbox" id="vida_sana" name="categorias_interes" value="vida_sana">
+                        <label for="vida_sana">Vida sana</label>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+                <div class="password-user">
+                    <label for="contrasena"></label>
+                    <input class="input-form" type="password" id="contrasena" name="contrasena"
+                        placeholder="Contraseña">
+
+
+
+                    <label for="confirmar_contrasena"></label>
+                    <input class="input-form" type="password" id="confirmar_contrasena" name="confirmar_contrasena"
+                        placeholder="Confirmar contraseña">
+
+                </div>
+
+
+
+                <div class="btn-submit-reset">
+                    <input class="btn-user"type="submit" value="ENVIAR">
+
+                    <input class="btn-user"type="reset" value="BORRAR">
+
+                </div>
+            </form>
+
+        </div>
+
+
+
+
+
+
+    </main>
+
+
+
+</body>
+
+</html>
