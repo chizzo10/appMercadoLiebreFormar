@@ -86,20 +86,35 @@ justify-content: center;
     border-top: 1px solid #ebebeb;
     padding-top: 10px;
     padding-left: 15px;
+    position: relative;
 
 }
 
 .card-icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 1px solid #39b54a;
     color: #39b54a;
-   
-   
-
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    
 }
-
+.card-icon-circle i:hover{
+animation: rotate 1s;
+}
+@keyframes rotate{
+    0%{
+transform: rotate(0);
+    }
+    100%{
+transform: rotate(-90deg);
+    }
+}
 
 
 .card-descuento {
@@ -109,6 +124,24 @@ justify-content: center;
 
 .card-titulo-producto {
     line-height: 2;
+   
+}
+.card-container:hover{
+box-shadow: 0px 0px 10px rgb(100,100,100);
+}
+.card-container h3 {
+    
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.card-container:hover h3 {
+    
+    height: 35px;
+}
+.footer-info{
+    text-align: center;
 }
 
 
@@ -218,6 +251,12 @@ justify-content: center;
         display: flex;
        
         
+    }
+    .footer-date{
+        display: flex;
+        justify-content: space-between;
+        
+        width: 100%;
     }
 
 }
